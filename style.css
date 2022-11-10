@@ -1,0 +1,967 @@
+/* /* Обнуление */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}  */
+/* input::-ms-clear {
+    display: none;
+} */
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*-------------------- */
+body {
+    font-family: 'PT Sans';
+    height: 100%;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+._container {
+    max-width: 1920px;
+    padding: 0px 15px;
+    margin: 0 auto;
+
+
+}
+
+/* ----header---------------------------------------------------------------  */
+/* ------------------------------------------------ строка 1 начало  */
+
+
+
+.header {
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 66px;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+}
+
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    width: 1110px;
+    margin: 0 auto;
+    height: 44px;
+}
+
+.number {
+    display: flex;
+}
+
+.number p a {
+    color: #969696;
+}
+
+.phone {
+    margin-right: 15px;
+}
+
+.reg {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.reg a {
+    color: #969696;
+}
+
+/* строка 1 конец  */
+/* строка 2 начало  */
+.header__menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #969696;
+    width: 1110px;
+    margin: 0 auto;
+    height: 88px;
+
+}
+
+.header__menu1 {
+    background-color: #0F0F0F;
+    width: 100%;
+}
+
+._porter {
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.menu {
+    padding: 5px 0;
+}
+
+.menu__list {
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 1920px;
+}
+
+.menu__item:not(:last-child) {
+    margin: 0px 16px 0px 0px;
+}
+
+.menu__link {
+    color: #444444;
+
+}
+
+@media (max-width: 1110px) {
+    .header_top {
+        max-width: 100%;
+
+    }
+}
+
+/* ------------------------------------------------ строка 2 конец */
+/* ------------------------------------------------ Начало мейн класса  */
+/* ------------------------------------------------ блок 1 */
+.main {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: gray;
+
+    width: 100%;
+}
+
+.main__cointainer {
+
+    margin: 0 auto;
+
+}
+
+.main__block1 {
+
+
+    width: 100%;
+    height: 810px;
+    background: url(img/head\ back.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-transform: uppercase;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    border: 4px solid #FFFFFF;
+
+
+}
+
+.h1 {
+    justify-content: center;
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.h2 {
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.item2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 80px;
+    width: 730px;
+    height: 96px;
+
+}
+
+
+
+/*----------------------------------------------------- блок 2 */
+.block2 {
+    align-items: center;
+    width: 100%;
+    height: 730px;
+
+
+}
+
+/* ------------------------------------левый блок новый сезон */
+.newseason {
+
+    width: 1040px;
+    height: 730px;
+    left: 0px;
+    top: 815px;
+
+}
+
+
+
+/* ---------------------------------------------блок 2  */
+.main__block2 {
+    width: 100%;
+    height: 730px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+/* -----------------------------------новый сезон  */
+.main__newseason {
+    width: 1040px;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    background: #0F0F0F;
+
+
+}
+
+.season {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.block__clock {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+}
+
+.clock__back {
+    background-color: #191B1C;
+    width: 260px;
+    height: 325px;
+}
+
+.clock1 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock2 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock3 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.name__clock {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.price {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+}
+
+/* -----------------------------------новая коллекция */
+.main__newcollection {
+    width: 880px;
+    height: 730px;
+    background: url(img/new\ collection.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 70px;
+
+
+}
+
+.button {
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    width: 138px;
+    height: 47px;
+
+}
+
+.text__newcoll {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* ----------------------------------------------------------------------блок3 */
+.main__block3 {
+
+    width: 100%;
+    height: 600px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block31 {
+    width: 936px;
+    height: 600px;
+    background: url(img/collections\ 2018.jpg) no-repeat;
+}
+
+.block32 {
+    width: 984px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block33 {
+    width: 628px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.zagolovokcoll {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button2 {
+
+    padding: 12px 28px;
+    gap: 10px;
+    width: 298px;
+    height: 47px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+
+}
+
+.text__block33 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
+/* -----------------------------------------------------------------блок 4 */
+
+.main__block4 {
+    width: 100%;
+    height: 1289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0F0F0F;
+
+}
+
+.main__block41 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.clock0 {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+}
+
+.clock4 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock5 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock6 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock7 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+}
+
+.clock8 {
+    width: 260px;
+    height: 405px;
+    margin: 10px;
+    opacity: .5;
+    cursor: pointer;
+
+
+}
+
+.clock81 {}
+
+.button081 {
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 12px 28px;
+    gap: 10px;
+
+}
+
+/* ------------------------------------------------блок 5 */
+.main__block5 {
+    width: 100%;
+    height: 1582px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.block51 {
+    width: 1172px;
+    height: 121px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0px 0px 35px 0px;
+
+
+}
+
+.block52 {
+    width: 100%;
+    height: 437px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 35px 0px;
+
+}
+
+.block521 {
+    width: 989px;
+    height: 437px;
+    background: url(img/info\ 1.jpg) no-repeat;
+
+}
+
+.block522 {
+    width: 931px;
+    height: 437px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block5221 {
+    width: 628px;
+    height: 209px;
+
+}
+
+.block53 {
+    width: 100%;
+    height: 437px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 35px 0px;
+
+
+}
+
+.block531 {
+    width: 989px;
+    height: 437px;
+    background: url(img/info\ 2.jpg) no-repeat;
+
+}
+
+.block532 {
+    width: 931px;
+    height: 437px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block5321 {
+    width: 628px;
+    height: 159px;
+
+}
+
+.block5322 {
+    width: 628px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.block54 {
+    width: 100%;
+    height: 437px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.block541 {
+    width: 989px;
+    height: 437px;
+    background: url(img/info\ 3.jpg) no-repeat;
+
+}
+
+.block542 {
+    width: 931px;
+    height: 437px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block5421 {
+    width: 628px;
+    height: 209px;
+
+}
+
+.block5422 {
+    width: 628px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infozagolovok {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.infotext {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.infobutton {
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 12px 28px;
+    gap: 10px;
+
+}
+
+.infotag {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* --------------------------------------------Блок 6 */
+
+.main__block6 {
+    width: 100%;
+    height: 541px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 100px;
+    margin: 10px 0 10px 0;
+    background: #fd2727;
+    border-bottom: 100px solid #fff;
+    overflow: hidden;
+}
+
+.partners {}
+
+.line1 {
+
+    width: 120px;
+    height: 1px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.line0 {
+
+    width: 179px;
+    text-align: center;
+    display: inline-block;
+    height: 1px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+}
+
+.under_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button52 {
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 12px 28px;
+    gap: 10px;
+
+}
+
+/* --------------------------------------------Блок 7 */
+
+.main__block7 {
+    width: 100%;
+    height: 450px;
+    background: url(img/footer\ back.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.block71 {
+    width: 350px;
+    height: 231px;
+
+}
+
+.block72 {
+    width: 400px;
+    height: 231px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.block73 {
+    width: 350px;
+    height: 231px;
+}
+
+.h71 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.p71 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+}
+
+.button_block {
+
+    width: 300px;
+    height: 200px;
+    display: block;
+    flex-direction: wrap;
+
+    /* justify-content: space-around; */
+}
+
+.button71 {
+    margin: 3px;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+
+.button73 {
+
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+.input71 {
+    background: rgba(255, 255, 255, 0.4);
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ffffff;
+
+
+
+}
+
+
+/* --------------------------------------------------------------footer */
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 50px;
+    margin: 0 auto;
+    color: #D0D0D0;
+
+}
+
+
+.footer p a {
+    text-decoration: underline;
+    color: #D0D0D0;
+}
